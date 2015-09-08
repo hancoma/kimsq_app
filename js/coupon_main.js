@@ -1,24 +1,15 @@
-function category_view(no) {
+function main_menu() {
 	var category=no;
-	$.post("http://hancoma.com/coupon/category.php",
+	$.post("http://kimsqapp.kimsq.co.kr/main_menu.php",
 	{
-		category:category
+		
 	},function(data) {
-		$(".content").html(data);
+		$("#main_menu").html(data);
 	});
-
 }
 
-function company_view(no) {
-	var no=no;
-	$.post("http://hancoma.com/coupon/company.php",
-	{
-		no:no
-	},function(data) {
-		$(".content").html(data);
-	});
 
-}
+
 // 더보기 파일 
 
  
