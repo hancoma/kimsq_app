@@ -1,5 +1,5 @@
 function main_menu() {
-	var category=no;
+	
 	$.post("http://kimsqapp.kimsq.co.kr/main_menu.php",
 	{
 		
